@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 整个容器 */
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('./img/bg.jpg');
+    background-size: 100% 100%;
+}
+
+/* 开始按钮 */
+.wrapper .btn {
+    width: 160px;
+    height: 145px;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    background-image: url('./img/startGame.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+/* 内容区 */
+.wrapper .box {
+    display: none;
+    width: 500px;
+    height: 500px;
+    margin: 200px auto;
+    border-top: 1px solid #B25F27;
+    border-left: 1px solid #B25F27;
+    cursor: pointer;
+}
+.wrapper .flagBox {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* 失败弹窗 */
+.wrapper .alertBox {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.2);
+}
+.wrapper .alertBox .alertImg {
+    width: 200px;
+    height: 200px;
+    /* margin: 335px auto; */
+    background-image: url('./img/success.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+.wrapper .alertBox .alertImg .close {
+    /* float: right;
+    padding-top: 4px;
+    padding-right: 5px; */
+
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/closeBtn.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+/* 小格的样式 */
+.block {
+    width: 49px;
+    height: 49px;
+    border-right: 1px solid #B25F27;
+    border-bottom: 1px solid  #B25F27;
+    box-shadow: 0 0 4px #333 inset;
+    background-image: url('./img/cao.jpg');
+    background-size: 100% 100%;
+    float: left;
+}
+
+.show {
+    background-image: url('./img/dilei.jpg');
+    background-size: 100% 100%;
+}
+
+.num {
+    background: rgb(6, 252, 198);
+    font-size: 16px;
+    color: rgb(240, 24, 24);
+    line-height: 49px;
+    text-align: center;
+}
+
+.flag {
+    background-image: url('./img/hongqi.jpg');
+    background-size: 100% 100%;
+}
